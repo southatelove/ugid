@@ -14,7 +14,6 @@
 
 .main-section {
   background: white;
-  min-height: 500px;
 }
 .main-section__content {
   display: flex;
@@ -398,7 +397,6 @@
   }
   .info-box__text {
     font-size: 12px;
-    height: 30px;
   }
   .info p {
     font-size: 8px;
@@ -431,9 +429,6 @@
   .left-wrapper__info-box {
     grid-column-gap: 15px;
   }
-  .info-box__text {
-    height: 40px;
-  }
   .subscribe-section__title {
     font-size: 30px;
   }
@@ -445,9 +440,6 @@
     position: relative;
     padding-left: 10px;
     padding-right: 10px;
-  }
-  .main-section {
-    min-height: 400px;
   }
   .main-section__nav-container {
     margin-bottom: 40px;
@@ -536,7 +528,6 @@
     justify-content: space-between;
   }
   .info-box__text {
-    height: 15px;
     font-size: 14px;
   }
   .subscribe-section__second-text {
@@ -556,6 +547,9 @@
   }
   .subscribe-section__content-container {
     min-height: 380px;
+  }
+  .left-wrapper__info {
+    margin-bottom: 40px;
   }
 }
 @media (max-width: 400px) {
