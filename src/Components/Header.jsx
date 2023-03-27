@@ -1,15 +1,36 @@
+import Arrow from "../icons/Arrow.svg";
+import React, { useState } from "react";
+
 import "../css/style.css";
 
 function Header() {
+  const [burger, setBurger] = useState(false);
+  const [activeBurger, setActiveBurger] = useState(false);
+
   return (
     <section className="header-section">
-      <div className="hamburger">
+      <div
+        className={burger ? `hamburger_active hamburger` : "hamburger"}
+        onClick={() => setBurger((prev) => !prev)}
+      >
         <span className=""></span>
         <span className=""></span>
         <span className=""></span>
       </div>
       <header className="main-section__header header">
-        <div className="main-section__nav-container container">
+        <div
+          className={
+            burger
+              ? "main-section__nav-container container nav-menu nav-menu_active"
+              : "main-section__nav-container container nav-menu"
+          }
+          // onClick={() => setBurger((prev) => !prev)}
+        >
+          <img
+            src={Arrow}
+            className="nav-menu__img"
+            onClick={() => setBurger((prev) => !prev)}
+          ></img>
           <div className="main-section__nav">
             <ul className="nav-menu__list ">
               <li className="nav-menu__list-item">
