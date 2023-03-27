@@ -8,6 +8,11 @@
 
 .header-section
     background: #F7F7F7
+.footer
+    background: #F7F7F7
+    position: absolute
+    width: 100%
+    bottom: 0
 .main-section
     background: white
     &__content
@@ -202,8 +207,6 @@
 .info-section
     &__content-container
         display: flex
-        // max-height: 508px
-        // margin-bottom: 83px
     &__left-wrapper
         max-width: 650px
         margin-right: 50px
@@ -231,6 +234,7 @@
         margin-bottom: 82px
         width: 100%
 .subscribe-section
+    min-height: 530px
     &__box-items
         margin-bottom: 12px
     &__first-text
@@ -306,6 +310,55 @@
         font-family: 'Open Sans'
         font-style: normal
         font-weight: 600
+        cursor: pointer
+        &:active
+            border: 1px solid #3385FF
+.footer
+    &__container
+        display: flex
+        justify-content: space-evenly
+        height: 150px
+        background: #F7F7F7
+        padding-top: 40px
+        h5
+            color: #7E8EA5
+            font-family: 'Open Sans'
+            font-style: normal
+            font-weight: 600
+            font-size: 14px
+            line-height: 100%
+            margin-bottom: 12px
+            cursor: pointer
+        p
+            font-family: 'Open Sans'
+            font-style: normal
+            font-weight: 400
+            font-size: 14px
+            line-height: 100%
+            margin-bottom: 8px
+            cursor: pointer
+            &:last-child
+                margin-bottom: 0
+.buttons
+    &__main-btn
+        width: 202px
+        border: 0
+        padding: 0
+        height: 34px
+        text-align: center
+        color: #2A303A
+        border: 1px solid #D1DBE8
+        border-radius: 4px
+        font-family: 'Open Sans'
+        font-style: normal
+        font-weight: 400
+        font-size: 14px
+        line-height: 100%
+        cursor: pointer
+        &:active
+            border: 1px solid #3385FF
+.subscribe-section__content-container
+    margin-bottom: 80px
 @media (max-width:1199px)
     .container
         width: 900px
@@ -318,6 +371,8 @@
         width: 248px
     .right-wrapper__second-hr
         width: 248px
+    .subscribe-section__content-container
+        margin-bottom: 80px
 @media (max-width:991px)
     .container
         width: 860px
@@ -333,6 +388,8 @@
     .info
         p
             font-size: 8px
+    .subscribe-section__content-container
+        margin-bottom: 80px
 @media (max-width:920px)
     .container
         width: 740px
@@ -355,7 +412,8 @@
         grid-column-gap: 15px
     .subscribe-section__title
         font-size: 30px
-
+    .subscribe-section__content-container
+        margin-bottom: 80px
 @media (max-width:767px)
     .container
         width: 540px
@@ -363,9 +421,11 @@
         position: relative
         padding-left: 10px
         padding-right: 10px
+    .main-section__blog
+        margin-bottom: 20px
     .main-section
         &__nav-container
-            margin-bottom: 40px
+            margin-bottom: 20px
     .main-section__right-wrapper
         width: 224px
     .right-wrapper__first-hr
@@ -407,11 +467,15 @@
         margin-bottom: 53px
     .left-wrapper__info-box
         margin-bottom: 23px
+    .subscribe-section__content-container
+        margin-bottom: 60px
 @media (max-width:575px)
     .container
         width: 100%
         padding-left: 20px
         padding-right: 20px
+    .main-section__blog
+        margin-bottom: 20px
     .left-wrapper__title
         font-size: 18px
     .left-wrapper__info-box
@@ -437,9 +501,17 @@
     .item__input
         margin-bottom: 15px
     .subscribe-section__content-container
-        min-height: 380px
+        min-height: 353px
     .left-wrapper__info
         margin-bottom: 40px
+    .buttons__main-btn
+        width: 118px
+        font-size: 12px
+    .footer__container
+        h5
+            font-size: 12px
+        p
+            font-size: 12px
 @media (max-width:400px)
     .container
         width: 100%

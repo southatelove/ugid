@@ -1,5 +1,5 @@
 import mountain from "../img/mountain.png";
-// import "../css/index.css";
+
 import vector from "../icons/vector.svg";
 import littlePerson from "../icons/littlePerson.svg";
 import calendar from "../icons/calendar.svg";

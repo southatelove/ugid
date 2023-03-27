@@ -3,6 +3,7 @@ import InfoPage from "./Components/InfoPage";
 import Header from "./Components/Header";
 import Main from "./Components/Main";
 import Subscribe from "./Components/Subscribe";
+import FooterBlock from "./Components/FooterBlock";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Main />
       <InfoPage />
       <Subscribe />
+      <FooterBlock />
     </>
   );
 }
