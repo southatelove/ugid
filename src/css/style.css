@@ -622,6 +622,39 @@
     padding-left: 20px;
     padding-right: 20px;
   }
+  .main-section__nav-container {
+    display: none;
+  }
+  .header {
+    min-height: 80px;
+    margin-bottom: 20px;
+  }
+  .hamburger {
+    width: 30px;
+    position: absolute;
+    top: 35px;
+    right: 30px;
+    height: 14px;
+  }
+  .hamburger span {
+    height: 2px;
+    width: 100%;
+    display: block;
+    background: black;
+    margin-bottom: 4px;
+  }
+  .hamburger span:last-child {
+    margin-bottom: 0;
+  }
+  .hamburger_active span:nth-child(1) {
+    transform: rotate(-45deg);
+  }
+  .hamburger_active span:nth-child(2) {
+    display: none;
+  }
+  .hamburger_active span:nth-child(3) {
+    transform: rotate(45deg);
+  }
   .main-section__blog {
     margin-bottom: 20px;
   }

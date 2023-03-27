@@ -495,11 +495,38 @@
     .subscribe-section__content-container
         margin-bottom: 60px
 @media (max-width:575px)
-
     .container
         width: 100%
         padding-left: 20px
         padding-right: 20px
+    .main-section__nav-container
+        display: none
+    .header
+        min-height: 80px
+        margin-bottom: 20px
+    .hamburger
+        width: 30px
+        position: absolute
+        top: 35px
+        right: 30px
+        height: 14px
+        span
+            height: 2px
+            width: 100%
+            display: block
+            background: black
+            margin-bottom: 4px
+            &:last-child
+                margin-bottom: 0
+    .hamburger_active
+        span
+            &:nth-child(1)
+                transform: rotate(-45deg)
+            &:nth-child(2)
+                display: none
+            &:nth-child(3)
+                transform: rotate(45deg)
+
     .main-section__blog
         margin-bottom: 20px
     .left-wrapper__title

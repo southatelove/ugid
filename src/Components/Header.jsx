@@ -3,6 +3,11 @@ import "../css/style.css";
 function Header() {
   return (
     <section className="header-section">
+      <div className="hamburger">
+        <span className=""></span>
+        <span className=""></span>
+        <span className=""></span>
+      </div>
       <header className="main-section__header header">
         <div className="main-section__nav-container container">
           <div className="main-section__nav">
