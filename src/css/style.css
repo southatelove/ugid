@@ -90,7 +90,7 @@
 }
 .header__main-btn:active {
   border: 1px solid #3385FF;
-  font-size: 14px;
+  padding-top: 3px;
 }
 
 .nav-menu__list {
@@ -674,6 +674,9 @@
   }
   .footer__container p {
     font-size: 12px;
+  }
+  .nav-menu__list li a {
+    font-size: 10px;
   }
 }
 @media (max-width: 400px) {
