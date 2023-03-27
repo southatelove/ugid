@@ -30,6 +30,7 @@
   align-items: center;
   height: 80px;
   margin-bottom: 40px;
+  justify-content: space-between;
 }
 .main-section__blog {
   display: flex;
@@ -73,8 +74,35 @@
   max-height: 402px;
 }
 
+.header__main-btn {
+  border: 0;
+  margin: 0;
+  color: #7E8EA2;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 100%;
+  width: 141px;
+  height: 34px;
+  border: 1px solid #D1DBE8;
+  border-radius: 4px;
+}
+.header__main-btn:active {
+  border: 1px solid #3385FF;
+  font-size: 14px;
+}
+
 .nav-menu__list {
   display: flex;
+}
+.nav-menu__list li a {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 100%;
+  color: black;
 }
 .nav-menu__list-item {
   margin-right: 20px;

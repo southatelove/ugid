@@ -8,7 +8,7 @@ import Card from "./Card";
 function InfoPage() {
   return (
     <>
-      <section className="info-section">
+      <section id="newsBlog" className="info-section">
         <div className="info-section__content-container container">
           <div className="info-section__left-wrapper">
             <Card />

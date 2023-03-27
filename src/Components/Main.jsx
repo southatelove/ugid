@@ -7,7 +7,7 @@ import calendar from "../icons/calendar.svg";
 function Main() {
   return (
     // Основная секция
-    <section className="main-section">
+    <section id="mainBlog" className="main-section">
       <div className="main-section__content-container container">
         <div className="main-section__blog">
           <p className="main-section__text">Главная</p>
