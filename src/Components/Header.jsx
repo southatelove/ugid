@@ -3,10 +3,7 @@ import React, { useState } from "react";
 
 import "../css/style.css";
 
-function Header() {
-  const [burger, setBurger] = useState(false);
-  const [activeBurger, setActiveBurger] = useState(false);
-
+function Header({ burger, setBurger }) {
   return (
     <section className="header-section">
       <div
